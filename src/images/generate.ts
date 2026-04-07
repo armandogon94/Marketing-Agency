@@ -82,7 +82,7 @@ export async function generateImage(
   const {
     prompt,
     aspectRatio = "16:9",
-    model = "gemini-2.0-flash-exp",
+    model = "gemini-2.5-flash-image",
     outputPath = join("output", `image_${Date.now()}.png`),
     numberOfImages = 1,
   } = options;
@@ -91,7 +91,7 @@ export async function generateImage(
   const genModel = genAI.getGenerativeModel({
     model,
     generationConfig: {
-      responseMimeType: "image/png",
+      responseModalities: ["TEXT", "IMAGE"],
     } as Record<string, unknown>,
   });
 

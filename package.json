@@ -21,14 +21,15 @@
     "automation",
     "remotion",
     "heygen",
-    "higgsfield",
+    "hedra",
     "ai-agents"
   ],
   "author": "Armando Gonzalez <armandogon94@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
-    "@higgsfield/client": "^2.0.0",
+    "dotenv": "^16.4.0",
+    "hedra-node": "^0.1.2",
     "@remotion/bundler": "4.0.443",
     "@remotion/cli": "4.0.443",
     "@remotion/renderer": "4.0.443",

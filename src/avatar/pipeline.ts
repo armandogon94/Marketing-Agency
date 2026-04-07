@@ -7,7 +7,7 @@
  * - Remotion: data-driven videos (stats, listicles, explainers)
  */
 
-export type VideoBackend = "heygen" | "higgsfield" | "remotion";
+export type VideoBackend = "heygen" | "hedra" | "remotion";
 
 export interface AvatarVideoRequest {
   script: string;
@@ -53,16 +53,15 @@ export function suggestBackend(contentType: string): VideoBackend {
     return "heygen";
   }
 
-  // Higgsfield: cinematic, product animation, lipsync, AI-generated footage
+  // Hedra: lip-synced avatar, character animation, AI-generated talking head
   if (
-    type.includes("cinematic") ||
-    type.includes("product animation") ||
     type.includes("lipsync") ||
     type.includes("ai video") ||
-    type.includes("b-roll") ||
-    type.includes("character")
+    type.includes("character") ||
+    type.includes("cheap avatar") ||
+    type.includes("budget")
   ) {
-    return "higgsfield";
+    return "hedra";
   }
 
   // Default: Remotion for data-driven content
@@ -85,16 +84,14 @@ export function estimateCost(
         notes: "HeyGen Pro plan: ~$0.99/credit",
       };
 
-    case "higgsfield": {
-      // Higgsfield: varies by duration tier
-      let credits = 15; // default 8s
-      if (durationSeconds <= 4) credits = 5;
-      else if (durationSeconds <= 8) credits = 15;
-      else credits = 30;
+    case "hedra": {
+      // Hedra: 6 credits/second at 720p, 3 at 540p
+      const creditsPerSec = 6;
+      const credits = durationSeconds * creditsPerSec;
       return {
         credits,
-        estimatedUSD: credits * 0.06,
-        notes: "Higgsfield Studio plan: ~$0.06/credit",
+        estimatedUSD: credits * 0.006, // Creator plan: $24/4000 credits
+        notes: "Hedra Creator plan ($24/mo): 4,000 credits. Free plan: 300 credits/mo (watermarked)",
       };
     }
 

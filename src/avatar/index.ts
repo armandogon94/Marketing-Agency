@@ -3,27 +3,21 @@ export {
   listVoices,
   createVideoAgent,
   createAvatarVideo,
-  waitForVideo,
-  downloadVideo,
+  waitForVideo as waitForHeygenVideo,
+  downloadVideo as downloadHeygenVideo,
   generateAvatarVideo,
 } from "./heygen";
 export type { HeyGenVideoOptions, HeyGenVideoResult } from "./heygen";
 
 export {
-  createVideo,
-  createLipsyncVideo,
-  generateImage as generateHiggsImage,
-  waitForGeneration,
-  downloadAsset,
-  generateHiggsVideo,
-  CREDIT_COSTS,
-} from "./higgsfield";
-export type {
-  HiggsVideoOptions,
-  HiggsVideoResult,
-  HiggsModel,
-  HiggsResolution,
-} from "./higgsfield";
+  createVideo as createHedraVideo,
+  listModels as listHedraModels,
+  waitForVideo as waitForHedraVideo,
+  downloadVideo as downloadHedraVideo,
+  generateVideo as generateHedraVideo,
+  CREDIT_COSTS as HEDRA_CREDIT_COSTS,
+} from "./hedra";
+export type { HedraVideoOptions, HedraVideoResult } from "./hedra";
 
 export { suggestBackend, estimateCost } from "./pipeline";
 export type {
