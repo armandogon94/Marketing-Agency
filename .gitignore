@@ -17,6 +17,9 @@ brand/assets/audio/*
 !brand/assets/videos/.gitkeep
 !brand/assets/audio/.gitkeep
 
+# Claude Code
+.claude/
+
 # Environment
 .env
 .env.local
