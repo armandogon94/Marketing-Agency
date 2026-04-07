@@ -1,0 +1,57 @@
+{
+  "id": "social-proof",
+  "name": "Testimonial Carousel",
+  "description": "Sequential testimonials with star ratings, customer photos, and spring-animated entrances",
+  "composition": "SocialProof",
+  "defaults": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationBehavior": "fixed",
+    "background": {
+      "type": "gradient",
+      "from": "#1a1a2e",
+      "to": "#16213e"
+    },
+    "text": {
+      "fontFamily": "Georgia",
+      "color": "#ffffff"
+    },
+    "testimonials": [
+      {
+        "quote": "This product completely transformed our workflow.",
+        "name": "Sarah Johnson",
+        "role": "CEO, TechCorp",
+        "photoUrl": "",
+        "rating": 5
+      },
+      {
+        "quote": "We saw a 300% increase in productivity within weeks.",
+        "name": "Michael Chen",
+        "role": "CTO, StartupX",
+        "photoUrl": "",
+        "rating": 5
+      },
+      {
+        "quote": "The best investment we made this year, hands down.",
+        "name": "Emily Rodriguez",
+        "role": "VP Marketing, GrowthCo",
+        "photoUrl": "",
+        "rating": 4
+      }
+    ],
+    "starColor": "#ffd700",
+    "accentColor": "#ffd700",
+    "secondsPerTestimonial": 5,
+    "branding": {
+      "logo": null,
+      "watermark": null
+    }
+  },
+  "platforms": {
+    "youtube": { "width": 1920, "height": 1080 },
+    "tiktok": { "width": 1080, "height": 1920 },
+    "reels": { "width": 1080, "height": 1920 },
+    "square": { "width": 1080, "height": 1080 }
+  }
+}

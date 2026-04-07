@@ -1,0 +1,39 @@
+{
+  "name": "My Brand",
+  "colors": {
+    "primary": "#000000",
+    "secondary": "#ffffff",
+    "accent": "#ffd700",
+    "background": "#0a0a0a",
+    "text": "#f5f5f5"
+  },
+  "fonts": {
+    "heading": "Inter",
+    "body": "Inter",
+    "custom": []
+  },
+  "logo": {
+    "primary": "brand/assets/logos/logo-primary.svg",
+    "icon": "brand/assets/logos/icon.png",
+    "watermark": "brand/assets/logos/watermark.png"
+  },
+  "voice": {
+    "tts_voice": "es-MX-JorgeNeural",
+    "tone": "professional",
+    "language": "es"
+  },
+  "broll": {
+    "intro": "brand/assets/videos/intro.mp4",
+    "outro": "brand/assets/videos/outro.mp4",
+    "transitions": []
+  },
+  "social": {
+    "handle": "@mybrand",
+    "hashtags": []
+  },
+  "style": {
+    "mood": "professional",
+    "colorGrading": "neutral",
+    "captionPosition": "bottom"
+  }
+}

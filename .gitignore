@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.venv/
+
+# Build output
+dist/
+build/
+remotion-bundle/
+
+# Generated content
+output/*
+!output/.gitkeep
+
+# Brand assets (large files — user manages separately)
+brand/assets/videos/*
+brand/assets/audio/*
+!brand/assets/videos/.gitkeep
+!brand/assets/audio/.gitkeep
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Remotion
+public/audio.mp3
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Locks (committed separately)
+# package-lock.json
+# uv.lock

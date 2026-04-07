@@ -1,0 +1,38 @@
+{
+  "id": "product-showcase",
+  "name": "Feature Highlights",
+  "description": "Product feature cards with animated glow effects and sequential slide-in entrances",
+  "composition": "ProductShowcase",
+  "defaults": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationBehavior": "fixed",
+    "background": {
+      "type": "gradient",
+      "from": "#0f0c29",
+      "to": "#302b63"
+    },
+    "productName": "SuperApp Pro",
+    "features": [
+      { "icon": "⚡", "title": "Lightning Fast", "description": "10x faster than the competition" },
+      { "icon": "🔒", "title": "Enterprise Security", "description": "Bank-grade encryption built in" },
+      { "icon": "📊", "title": "Real-Time Analytics", "description": "Insights at your fingertips" },
+      { "icon": "🔗", "title": "Seamless Integrations", "description": "Connect with 500+ tools" }
+    ],
+    "accentColor": "#00d4ff",
+    "textColor": "#ffffff",
+    "cardColor": "rgba(255,255,255,0.08)",
+    "secondsPerFeature": 3,
+    "branding": {
+      "logo": null,
+      "watermark": null
+    }
+  },
+  "platforms": {
+    "youtube": { "width": 1920, "height": 1080 },
+    "tiktok": { "width": 1080, "height": 1920 },
+    "reels": { "width": 1080, "height": 1920 },
+    "square": { "width": 1080, "height": 1080 }
+  }
+}

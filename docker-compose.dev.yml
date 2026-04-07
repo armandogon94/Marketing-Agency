@@ -1,0 +1,34 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+    restart: unless-stopped
+
+  agency:
+    build: .
+    ports:
+      - "3160:3000"
+    volumes:
+      - ./src:/app/src
+      - ./campaigns:/app/campaigns
+      - ./output:/app/output
+      - ./brand:/app/brand
+      - ./templates:/app/templates
+      - ./reference-videos:/app/reference-videos
+      - ./public:/app/public
+      - ./.env:/app/.env
+    env_file: .env
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped

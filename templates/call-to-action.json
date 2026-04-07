@@ -1,0 +1,36 @@
+{
+  "id": "call-to-action",
+  "name": "CTA with Urgency",
+  "description": "Bold headline, value proposition, and pulsing CTA button with optional urgency text",
+  "composition": "CallToAction",
+  "defaults": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationBehavior": "fixed",
+    "background": {
+      "type": "gradient",
+      "from": "#1a0a2e",
+      "to": "#2e1a4e"
+    },
+    "headline": "Ready to Transform Your Business?",
+    "subheadline": "Join thousands of companies already seeing results.",
+    "buttonText": "Start Free Trial",
+    "urgencyText": "Limited time — 50% off for early adopters",
+    "textColor": "#ffffff",
+    "buttonColor": "#ff4d4d",
+    "buttonTextColor": "#ffffff",
+    "accentColor": "#ffd700",
+    "fontFamily": "Inter",
+    "branding": {
+      "logo": null,
+      "watermark": null
+    }
+  },
+  "platforms": {
+    "youtube": { "width": 1920, "height": 1080 },
+    "tiktok": { "width": 1080, "height": 1920 },
+    "reels": { "width": 1080, "height": 1920 },
+    "square": { "width": 1080, "height": 1080 }
+  }
+}

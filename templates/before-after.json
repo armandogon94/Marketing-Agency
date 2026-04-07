@@ -1,0 +1,32 @@
+{
+  "id": "before-after",
+  "name": "Split-Screen Comparison",
+  "description": "Animated wipe reveal comparing before and after states with configurable colors",
+  "composition": "BeforeAfter",
+  "defaults": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationBehavior": "fixed",
+    "beforeLabel": "Before",
+    "afterLabel": "After",
+    "beforeText": "Manual processes, scattered data, slow decisions",
+    "afterText": "Automated workflows, unified dashboard, instant insights",
+    "beforeColor": "#1a1a2e",
+    "afterColor": "#0d3b2e",
+    "backgroundColor": "#111111",
+    "textColor": "#ffffff",
+    "dividerColor": "#ffd700",
+    "fontFamily": "Inter",
+    "branding": {
+      "logo": null,
+      "watermark": null
+    }
+  },
+  "platforms": {
+    "youtube": { "width": 1920, "height": 1080 },
+    "tiktok": { "width": 1080, "height": 1920 },
+    "reels": { "width": 1080, "height": 1920 },
+    "square": { "width": 1080, "height": 1080 }
+  }
+}

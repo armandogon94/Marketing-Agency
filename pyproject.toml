@@ -1,0 +1,16 @@
+[project]
+name = "marketing-agency"
+version = "1.0.0"
+description = "Claude Code-powered marketing agency — multi-agent content creation pipeline"
+requires-python = ">=3.11"
+dependencies = [
+    "edge-tts>=7.2.8",
+    "faster-whisper>=1.2.1",
+    "patchright>=1.55.2",
+    "python-dotenv>=1.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
