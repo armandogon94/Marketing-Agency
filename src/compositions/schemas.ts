@@ -32,7 +32,14 @@ export const explainerSchema = z.object({
   accentColor: z.string().default("#ffd700"),
   textColor: z.string().default("#ffffff"),
   fontFamily: z.string().default("Inter, sans-serif"),
-  captions: captionStyleSchema.default({}),
+  captions: captionStyleSchema.default({
+    enabled: true,
+    fontSize: 36,
+    color: "#ffffff",
+    highlightColor: "#ffd700",
+    position: "bottom",
+    backgroundColor: "rgba(0,0,0,0.7)",
+  }),
 });
 export type ExplainerProps = z.infer<typeof explainerSchema>;
 
@@ -46,7 +53,14 @@ export const talkingHeadSchema = z.object({
   backgroundColor: z.string().default("#0a0a0a"),
   nameTag: z.string().default(""),
   nameTagColor: z.string().default("#ffd700"),
-  captions: captionStyleSchema.default({}),
+  captions: captionStyleSchema.default({
+    enabled: true,
+    fontSize: 36,
+    color: "#ffffff",
+    highlightColor: "#ffd700",
+    position: "bottom",
+    backgroundColor: "rgba(0,0,0,0.7)",
+  }),
 });
 export type TalkingHeadProps = z.infer<typeof talkingHeadSchema>;
 
@@ -67,7 +81,14 @@ export const listicleSchema = z.object({
   accentColor: z.string().default("#ffd700"),
   textColor: z.string().default("#ffffff"),
   secondsPerItem: z.number().default(5),
-  captions: captionStyleSchema.default({}),
+  captions: captionStyleSchema.default({
+    enabled: true,
+    fontSize: 36,
+    color: "#ffffff",
+    highlightColor: "#ffd700",
+    position: "bottom",
+    backgroundColor: "rgba(0,0,0,0.7)",
+  }),
 });
 export type ListicleProps = z.infer<typeof listicleSchema>;
 
@@ -81,7 +102,14 @@ export const quoteCardSchema = z.object({
   quoteColor: z.string().default("#ffffff"),
   authorColor: z.string().default("#ffd700"),
   fontFamily: z.string().default("Georgia, serif"),
-  captions: captionStyleSchema.default({}),
+  captions: captionStyleSchema.default({
+    enabled: true,
+    fontSize: 36,
+    color: "#ffffff",
+    highlightColor: "#ffd700",
+    position: "bottom",
+    backgroundColor: "rgba(0,0,0,0.7)",
+  }),
 });
 export type QuoteCardProps = z.infer<typeof quoteCardSchema>;
 

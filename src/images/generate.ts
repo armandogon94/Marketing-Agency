@@ -104,7 +104,7 @@ export async function generateImage(
   // Extract image data from response
   const parts = response.candidates?.[0]?.content?.parts ?? [];
   const imagePart = parts.find(
-    (p: Record<string, unknown>) => p.inlineData,
+    (p) => "inlineData" in p,
   ) as
     | { inlineData: { data: string; mimeType: string } }
     | undefined;

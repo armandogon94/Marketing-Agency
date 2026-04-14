@@ -1,0 +1,110 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - button [ref=e5]:
+        - img [ref=e7]
+      - button "File" [ref=e9]
+      - button "View" [ref=e10]
+      - button "Tools" [ref=e11]
+      - button "Packages" [ref=e12]
+      - button "Help" [ref=e13]
+    - generic "/Users/armandogonzalez/Documents/Claude/Deep Research Claude Code/16-Marketing-Agency" [ref=e14]:
+      - generic "Open GitHub Repo" [ref=e15] [cursor=pointer]: Marketing-Agency
+      - generic [ref=e16]: /
+      - generic "ExplainerVideo" [ref=e17]
+    - generic [ref=e18]:
+      - button [ref=e19]:
+        - generic "Toggle Left Sidebar (⌘+B)" [ref=e20]
+      - button [ref=e22]:
+        - generic "Toggle Right Sidebar (⌘+J)" [ref=e23]
+  - generic [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e29]:
+        - generic [ref=e31]:
+          - generic [ref=e33]:
+            - button "Compositions" [ref=e34]
+            - button "Assets" [ref=e35]
+          - generic [ref=e36]:
+            - generic [ref=e39]:
+              - generic [ref=e40]: ExplainerVideo
+              - generic [ref=e41]: 1920x1080, 30 FPS
+              - generic [ref=e42]: Duration 00:10.00
+            - button "Search... ⌘+K" [ref=e44] [cursor=pointer]:
+              - text: Search...
+              - generic [ref=e45]: ⌘+K
+            - generic [ref=e46]:
+              - button "Landscape-16x9" [ref=e47]:
+                - img [ref=e48]
+                - generic [ref=e50]: Landscape-16x9
+              - button "Marketing" [ref=e51]:
+                - img [ref=e52]
+                - generic [ref=e54]: Marketing
+              - button "Vertical-9x16" [ref=e55]:
+                - img [ref=e56]
+                - generic [ref=e58]: Vertical-9x16
+        - generic [ref=e71]:
+          - generic:
+            - generic: 5 Claves para Implementar IA
+          - generic [ref=e72]: La inteligencia artificial está transformando los negocios.
+      - generic [ref=e73]:
+        - generic [ref=e75]:
+          - button "Zoom out timeline" [disabled] [ref=e76]:
+            - img [ref=e77]
+          - slider "Timeline zoom (1x)" [ref=e79]: "1"
+          - button "Zoom in timeline" [ref=e80]:
+            - img [ref=e81]
+        - generic "Preview Size" [ref=e83]:
+          - button "Fit" [ref=e84]:
+            - generic "Fit" [ref=e85]
+            - img [ref=e86]
+        - generic "Change the playback rate" [ref=e88]:
+          - button "1x" [ref=e89]:
+            - generic "1x" [ref=e90]
+            - img [ref=e91]
+        - button "Jump to beginning" [disabled] [ref=e93]:
+          - img [ref=e94]
+        - button "Step back one frame" [disabled] [ref=e96]:
+          - img [ref=e97]
+        - button "Play" [ref=e99]:
+          - img [ref=e100]
+        - button "Step forward one frame" [ref=e102]:
+          - img [ref=e103]
+        - button "Loop video" [ref=e105]:
+          - img [ref=e106]
+        - button "Mute video" [ref=e108]:
+          - img [ref=e109]
+        - button "Mark In (I) - right click to clear" [disabled] [ref=e111]:
+          - img [ref=e112]
+        - button "Mark Out (O) - right click to clear" [ref=e114]:
+          - img [ref=e115]
+        - button "Show transparency as checkerboard (T)" [ref=e117]:
+          - img [ref=e118]
+        - button "Enter fullscreen preview (F)" [ref=e120]:
+          - img [ref=e121]
+        - generic "Export the current composition (R)" [ref=e124] [cursor=pointer]:
+          - button "Render" [ref=e125]:
+            - generic [ref=e126]:
+              - img [ref=e127]
+              - generic [ref=e129]: Render
+    - generic [ref=e134]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - img
+        - generic "<Sequence>" [ref=e141]
+      - generic [ref=e143]:
+        - generic [ref=e144]: 00:00.00
+        - button "0" [ref=e145]
+      - generic [ref=e149]:
+        - generic [ref=e157]: "0"
+        - generic:
+          - generic:
+            - generic: 00:02.00
+          - generic:
+            - generic: 00:04.00
+          - generic:
+            - generic: 00:06.00
+          - generic:
+            - generic: 00:08.00
+        - generic:
+          - generic:
+            - img

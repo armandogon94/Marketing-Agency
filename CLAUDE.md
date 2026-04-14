@@ -1,6 +1,7 @@
 # CLAUDE.md — Marketing Agency
 
 > **This file is the primary context for Claude Code when working in this project.**
+> **Port allocation:** See [PORTS.md](PORTS.md) before changing any docker-compose ports. All ports outside the assigned ranges are taken by other projects.
 > Last updated: 2026-04-07
 
 ---

@@ -28,14 +28,14 @@
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
-    "dotenv": "^16.4.0",
-    "hedra-node": "^0.1.2",
     "@remotion/bundler": "4.0.443",
     "@remotion/cli": "4.0.443",
     "@remotion/renderer": "4.0.443",
     "@remotion/zod-types": "4.0.443",
     "commander": "14.0.3",
+    "dotenv": "^16.4.0",
     "execa": "9.6.1",
+    "hedra-node": "^0.1.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "remotion": "4.0.443",
@@ -46,6 +46,7 @@
     "@remotion/eslint-config": "4.0.443",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
+    "playwright": "^1.59.1",
     "typescript": "6.0.2",
     "vitest": "4.1.2"
   }
